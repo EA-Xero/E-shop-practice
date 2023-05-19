@@ -18,7 +18,7 @@
 }
 
 .navbar{
-    background-color: #9932CC;
+    background-color: #0D47A1;
 }
 
 
@@ -30,4 +30,34 @@
     font-family: roboto-bold;
     font-style: italic;
     font-size: large;
+}
+
+.filter{
+    text-align: center;
+    background-color: #CFD8DC;
+    padding: 0.6em;
+}
+
+footer{
+    background-color: #0D47A1;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5em;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.txf{
+    color: aqua;
+    font-family: roboto-light;
+    font-size: medium;
+}
+
+footer div p{
+    margin: 0%;
 }
