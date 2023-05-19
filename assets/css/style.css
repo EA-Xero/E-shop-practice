@@ -16,3 +16,18 @@
     font-family: roboto-bold;
     src: url(../fonts/Roboto-Bold.ttf);
 }
+
+.navbar{
+    background-color: #9932CC;
+}
+
+
+.txnav{
+    color: inherit;
+
+    text-decoration: none;
+    color: aqua;
+    font-family: roboto-bold;
+    font-style: italic;
+    font-size: large;
+}
