@@ -40,11 +40,12 @@
 }
 
 footer{
-    background-color: #0D47A1;
-    display: flex;
-    justify-content: space-evenly;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     padding: 0.5em;
     grid-area: footer;
+    height: 5em;
 }
 
 footer div{
@@ -60,8 +61,13 @@ footer div{
     font-size: medium;
 }
 
+.ixf{
+    color: aqua;
+}
+
 footer div p{
     margin: 0%;
+    height:min-content;
 }
 
 header{
@@ -82,7 +88,7 @@ main div{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     padding: 1em;
 }
 
@@ -108,6 +114,7 @@ body{
     "header"
     "menu"
     "main"
+    "exit"
     "footer";
     grid-template-columns: 1fr;
 }
@@ -125,4 +132,88 @@ img{
     background-color: black;
     border: 1px #0D47A1;
     border-style: solid;
+}
+
+num{
+    grid-area: exit;
+}
+
+/*medium*/
+@media (min-width: 768px) {
+    .filter{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+
+    body header nav div a{
+        text-align: start;
+    }
+
+    ul{
+        margin: 0;
+        justify-content: end;
+        width: 100%;
+    }
+
+    li{
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+
+    .px{
+        padding-top: 0%;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    body{
+        grid-template-areas:
+        "header header"
+        "menu main"
+        "menu exit"
+        "footer footer"
+    }
+}
+
+/*large*/
+@media (min-width: 1200px) {
+    .filter{
+        text-align: center;
+    }
+
+    .cf{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    nav{
+        height: 100%;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    body{
+        grid-template-areas:
+        "header menu"
+        "header main"
+        "header exit"
+        "footer footer"
+    }
+}
+
+/*x-large*/
+@media (min-width: 2000px){
+    main{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
 }

@@ -5,22 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-shop</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/009708912d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-gradient">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-gradient flex-lg-column">
+            <div class="container-fluid cf">
                 <a class="txnav" href="#">My E-shop</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse cf" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
                         <a class="active txnav text-opacity-75" aria-current="page" href="#">Home</a>
                     </li>
@@ -28,7 +28,7 @@
                         <a class=" txnav text-opacity-50" href="#">Catalogue</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link txnav disabled">Contacto</a>
+                        <a class="nav-link txnav disabled px">Contact</a>
                     </li>
                 </ul>
                 </div>
@@ -99,22 +99,29 @@
             <h5>69.000$</h5>
             <a class="button bg-gradient" href="#">Comprar</a>
         </div>
-        <div class="page">
-                <a class="tn" href="#"><<</a>
-                <a class="tn" href="#">1</a>
-                <a class="tn" href="#">2</a>
-                <a class="tn" href="#">3</a>
-                <a class="tn" href="#">>></a>
-            </div>
     </main>
-
-    <footer>
+    <num>
+        <div class="page">
+        <a class="tn" href="#"><<</a>
+        <a class="tn" href="#">1</a>
+        <a class="tn" href="#">2</a>
+        <a class="tn" href="#">3</a>
+        <a class="tn" href="#">>></a>
+        </div>
+    </num>
+    <footer class="bg-gradient">
         <div>
-            <i class="fa-brands fa-github txf fa-x2"></i>
+            <i class="fa-brands fa-github ixf fa-x3"></i>
             <a class="txf" href="https://github.com/EA-Xero"><strong>Github</strong></a>
         </div>
+
         <div>
-            <i class="fa-solid fa-envelope txf fa-x2"></i>
+            <i class="fa-solid fa-circle-user ixf fa-x3"></i>
+            <a class="txf" href="https://ea-xero.github.io/"><strong>Mi CV</strong></a>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-envelope ixf fa-x3"></i>
             <p class="txf">eduardoalarcon04@gmail.com</p>
         </div>
     </footer>
